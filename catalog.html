@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog - San'at Galereyasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>San'at Galereyasi</h1>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li class="dropdown">
+                        <a href="#">Tasviriy san'at <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="portraits.html">Portretlar</a></li>
+                            <li><a href="landscapes.html">Manzaralar</a></li>
+                            <li><a href="still-life.html">Natyurmort</a></li>
+                            <li><a href="abstract.html">Abstrakt san'at</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Hunarmandchilik <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Keramika</a></li>
+                            <li><a href="#">To'qimachilik</a></li>
+                            <li><a href="#">Yog'och o'ymakorligi</a></li>
+                            <li><a href="#">Zargarlik buyumlari</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Haqimizda</a></li>
+                    <li><a href="#">Bog'lanish</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#"><i class="fas fa-shopping-cart"></i> <span>0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>To'liq katalog</h1>
+            <p>Barcha san'at asarlari va hunarmandchilik mahsulotlari</p>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="filter-section">
+                <h3>Filtrlash</h3>
+                <div class="filter-group">
+                    <h4>Kategoriya</h4>
+                    <ul>
+                        <li><input type="checkbox" id="fine-art"> <label for="fine-art">Tasviriy san'at</label></li>
+                        <li><input type="checkbox" id="crafts"> <label for="crafts">Hunarmandchilik</label></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h4>Janr</h4>
+                    <ul>
+                        <li><input type="checkbox" id="portrait"> <label for="portrait">Portretlar</label></li>
+                        <li><input type="checkbox" id="landscape"> <label for="landscape">Manzaralar</label></li>
+                        <li><input type="checkbox" id="still-life"> <label for="still-life">Natyurmort</label></li>
+                        <li><input type="checkbox" id="abstract"> <label for="abstract">Abstrakt san'at</label></li>
+                        <li><input type="checkbox" id="ceramic"> <label for="ceramic">Keramika</label></li>
+                        <li><input type="checkbox" id="textile"> <label for="textile">To'qimachilik</label></li>
+                        <li><input type="checkbox" id="woodcarving"> <label for="woodcarving">Yog'och o'ymakorligi</label></li>
+                        <li><input type="checkbox" id="jewelry"> <label for="jewelry">Zargarlik buyumlari</label></li>
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h4>Narx oralig'i</h4>
+                    <div class="price-range">
+                        <input type="range" min="0" max="10000000" step="100000" value="5000000" id="price-range">
+                        <div class="price-labels">
+                            <span>0 so'm</span>
+                            <span id="price-value">5,000,000 so'm</span>
+                            <span>10,000,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn filter-btn">Filtrlash</button>
+            </div>
+
+            <div class="catalog-products">
+                <div class="sort-options">
+                    <label for="sort">Saralash:</label>
+                    <select id="sort">
+                        <option value="popular">Mashhurlik bo'yicha</option>
+                        <option value="price-low">Narx: pastdan yuqoriga</option>
+                        <option value="price-high">Narx: yuqoridan pastga</option>
+                        <option value="new">Yangi qo'shilganlar</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Mahsulotlar ro'yxati -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1582201942988-13e60e4556ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Portret">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bahor portreti</h3>
+                            <p class="artist">Rassom: Aziza Karimova</p>
+                            <p class="price">2,500,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1746980372130-27b32e22b5ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manzara">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tog' manzarasi</h3>
+                            <p class="artist">Rassom: Bobur Alimov</p>
+                            <p class="price">3,200,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1605099922599-a9e6eaf1ab5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manzara">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mevalar natyurmorti</h3>
+                            <p class="artist">Rassom: Malika Yusupova</p>
+                            <p class="price">1,800,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1719002906692-32dcef8010e7?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Natyurmort">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Ranglar simfoniyasi</h3>
+                            <p class="artist">Rassom: Jahongir Olimov</p>
+                            <p class="price">4,500,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1740080160850-d34e163790fb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Keramika">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Naqshli ko'za</h3>
+                            <p class="artist">Hunarmand: Dilshod Rahimov</p>
+                            <p class="price">850,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1563211183-e309d2ab6b54?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="To'qimachilik">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Atlas ko'ylak</h3>
+                            <p class="artist">Hunarmand: Zulfiya Karimova</p>
+                            <p class="price">1,500,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1582201942988-13e60e4556ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Yog'och o'ymakorligi">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Naqshli quti</h3>
+                            <p class="artist">Hunarmand: Akbar Toshev</p>
+                            <p class="price">750,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1684150859456-eeb897e5c177?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Zargarlik">
+                            <div class="overlay">
+                                <a href="portrait_detail.html" class="btn-small">Batafsil</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Kumush bilakuzuk</h3>
+                            <p class="artist">Zargar: Nodira Saidova</p>
+                            <p class="price">1,200,000 so'm</p>
+                            <button class="add-to-cart">Savatga qo'shish</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>San'at Galereyasi</h3>
+                    <p>O'zbekistonning eng iqtidorli san'atkorlari va hunarmandlarining asarlarini taqdim etuvchi onlayn platforma.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Tezkor havolalar</h3>
+                    <ul>
+                        <li><a href="index.html">Bosh sahifa</a></li>
+                        <li><a href="catalog.html">Katalog</a></li>
+                        <li><a href="#">Tasviriy san'at</a></li>
+                        <li><a href="#">Hunarmandchilik</a></li>
+                        <li><a href="#">Haqimizda</a></li>
+                        <li><a href="#">Bog'lanish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Bog'lanish</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Toshkent sh., Amir Temur ko'chasi, 15</p>
+                    <p><i class="fas fa-phone"></i> +998 90 123 45 67</p>
+                    <p><i class="fas fa-envelope"></i> info@sanatgalereyasi.uz</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ijtimoiy tarmoqlar</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 San'at Galereyasi. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
